@@ -1,0 +1,16 @@
+// Setting 
+@import './base/setting';
+@import './base/grid';
+
+// Module - General 
+@import './general/general';
+
+// Module - Resources 
+@import './resources/resources';
+
+
+body{
+    background-color: $bg-body;
+    margin: 0;
+    padding: 0;
+}

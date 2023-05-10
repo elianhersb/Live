@@ -1,0 +1,22 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    .col-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media screen and (min-width: $middle)
+{
+
+    .grid{
+        grid-template-columns: 15fr 3fr 1fr;
+
+    }
+}

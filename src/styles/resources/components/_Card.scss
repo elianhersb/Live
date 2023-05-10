@@ -1,0 +1,24 @@
+
+.card{
+    cursor: pointer;
+    color: $color-text-primary;
+    border-radius: 1.2em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 8em;
+    margin: 1.5em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .card-title{
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        overflow-wrap: break-word;
+    }
+    .card-description{
+        overflow-wrap: break-word;
+        font-size: 1em;
+    }   
+}
