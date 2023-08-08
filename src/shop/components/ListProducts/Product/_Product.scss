@@ -1,0 +1,39 @@
+.product{
+
+    margin: 1.5em 0;
+    border-radius: 1em;
+    overflow: hidden;
+
+    .container-product{
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        min-height: 10em;
+        padding: .5em;
+
+        .product-title{
+            font-size: .8em;
+            font-weight: bold;
+        }
+        .product-description{
+            font-size: .8em;
+        }
+    }
+    .product-btn{
+        background-color: $bg-green;
+        color: $color-text-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-weight: bold;
+        text-align: center;
+        height: 3em;
+        font-size: .8em;
+        text-transform: uppercase;
+    }
+}

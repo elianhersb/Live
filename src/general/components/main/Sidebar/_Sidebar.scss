@@ -1,0 +1,249 @@
+.sidebar{
+    background: $bg-primary;
+    width: 3em;
+    border-radius:0em 5em 5em 0em;
+
+    &.active{
+        width: 100%;
+        border-radius:0em;
+        .container-sidebar{
+            .top-items{
+                padding: 0.5em;
+                .container-profile{
+                    display: none;
+                }
+
+                .container-items{
+                    display: flex;
+                }
+
+                .container-collapsed{
+                    display: none;
+                }
+            }
+
+            .bottom-item{
+                display: block;
+                .container-movil-collapsed{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .container-sidebar{
+        min-height: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .top-items{
+            padding: 0em;
+            display: flex;
+            align-items: center;
+            .container-profile{
+                display: none;
+                cursor: pointer;
+                position: relative;
+                margin-bottom: 1em;
+                .profile{
+                    width: 2.5em;
+                    border-radius: 1.5em;
+                    border: #fff solid .1em;
+                }
+                .indicator{
+                    position: absolute;
+                    bottom: 0.2em;
+                    right: 0.2em;
+                    background-color: #fff;
+                    width: 1em;
+                    height: 1em;
+                    border-radius: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon{
+                        width: .7em;
+                    }
+                }
+
+                &.active{
+                    .profile{
+                        border: $color-text-second solid .1em;
+                    }
+                }
+            }
+
+
+            .container-items{
+                display: none;
+                margin: 0 1em;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                color: $color-text-primary;
+                text-decoration: none;
+                .icon{
+                    width: 1.4em;
+                }
+
+                .icon-second{
+                    display: none;
+                    width: 1.4em;
+                }
+    
+                .label{
+                    font-size: 0.7em;
+                    padding: 0.25em 0;
+                    
+                }
+                &:hover{
+                    color: $color-text-second;
+                    .icon{
+                        display: none;
+                    }
+                    .icon-second{
+                        display: block;
+                    }
+                }
+
+                &.active{
+                    color: $color-text-second;
+                    .icon{
+                        display: none;
+                    }
+                    .icon-second{
+                        display: block;
+                    }
+                }
+            }
+
+            .container-collapsed{
+                display: none;
+            }
+        }
+        .bottom-item{
+            cursor: pointer;
+            padding: 0em .5em;
+            padding-bottom: 0em;
+            text-align: center;
+
+            .container-movil-collapsed{
+                cursor: pointer;
+                .icon{
+                    display: block;
+                    width: 1.2em;
+                }
+            }
+
+            .icon{
+                display: none;
+                width: 2em;
+            }
+
+            .label{
+                display: none;
+                font-size: .8em;
+                color: $color-text-primary;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $middle)
+{
+    .sidebar{
+        display: block;
+        width: 1em;
+        border-radius:0;
+
+        &.active{
+            width: 4em;
+            .container-sidebar{
+                .top-items{
+                    .container-profile{
+                        display: block;
+                    }
+    
+                    .container-items{
+                        display: flex;
+                    }
+
+    
+                    .container-collapsed{
+                        display: block;
+                        .icon{
+                            left: -2.5em;
+                            bottom: -1em;
+                        }
+                    }
+
+                    .container-movil-collapsed{
+                        display: none;
+                    }
+                }
+    
+                .bottom-item{
+                    display: block;
+                }
+            }
+        }
+
+        .container-sidebar{
+            min-height: 100vh;
+            flex-direction: column;
+    
+            .top-items{
+                padding: 0.5em;
+                flex-direction: column;
+    
+                .container-collapsed{
+                    display: block;
+                    cursor: pointer;
+                    position: relative;
+                    margin-bottom: 2em;
+                    .icon{
+                        position: absolute;
+                        bottom: -5em;
+                        left: -1.1em;
+                        width: 1.2em;
+                    }
+                }
+
+                .container-movil-collapsed{
+                    display: none;
+                }
+                .container-items{
+                    display: none;
+                    margin:0 0 1em 0;
+                    flex-direction: column;
+                }
+            }
+            .bottom-item{
+                display: none;
+                padding: 0.5em;
+                padding-bottom: 1.5em;
+
+                .container-movil-collapsed{
+                   display: none;
+                   .icon{
+                     display: none;
+                   }
+                }
+
+                .icon{
+                    display: block;
+                }
+    
+                .label{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    
+
+}

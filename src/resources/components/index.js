@@ -1,2 +1,1 @@
-export * from './Card';
-export * from './ListCard';
+export * from './ListCards/ListCards';

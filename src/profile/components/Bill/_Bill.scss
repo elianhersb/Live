@@ -1,0 +1,43 @@
+.bill{
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #303543;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+
+    .container-description{
+        width: 60%;
+        font-size: .8em;
+        .description{
+            color: $color-text-primary;
+        }
+
+        .date{
+            color: $color-text-grey;
+        }
+    }
+    .container-credit{
+        width: 25%;
+        color: $color-text-primary;
+        border-left: solid .15em $color-text-primary;
+        border-right: solid .15em $color-text-primary;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1em;
+        font-size: .8em;
+        .type{
+            text-transform: uppercase;   
+        }
+    }
+    .container-amount{
+        width: 15%;
+        .amount{
+            font-size: 1em;
+            font-weight: bold;
+            color: $color-text-primary;
+            padding: .5em;
+        }
+    }
+}

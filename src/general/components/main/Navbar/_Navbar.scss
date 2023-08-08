@@ -1,0 +1,66 @@
+
+.navbar{
+    display: block;
+    width: 100%;
+    .container-navbar{
+        color:#fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em .2em;
+    
+        .logout{
+            padding: 0 1em;
+            width: 1.5em;
+        } 
+    
+        .logo{
+            padding: 0 1em;
+            width: 5em;
+        }
+        .container-profile{
+            padding: 0 1em;
+            position: relative;
+            .photo-profile{
+                width: 2em;
+                border-radius: 1em;
+                border: #fff solid .1em;
+            }
+    
+            .indicator{
+                position: absolute;
+                bottom: .2em;
+                right: 1em;
+                width: .5em;
+                height: .5em;
+                border-radius: 1em;
+                border: .1em solid #FFFFFF;
+                background-color: $bg-green;
+            }
+
+            &.active{
+                .photo-profile{
+                    border: $color-text-second solid .1em;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $middle)
+{
+    .navbar{
+        display: none;
+        .container-navbar{
+            justify-content: center;
+
+            .logo{
+                width: 7em;
+            }
+
+        }
+    }
+    
+
+}

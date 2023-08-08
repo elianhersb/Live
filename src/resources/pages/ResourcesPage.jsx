@@ -1,9 +1,9 @@
-import { ListCard } from "../components"
+import { ListCards } from "../components"
 
 export const ResourcesPage = () => {
   return (
     <>
-      <ListCard />
+      <ListCards />
     </>
   )
 }

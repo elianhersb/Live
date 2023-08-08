@@ -1,0 +1,88 @@
+.container-content{
+    order: 2;
+    background: $bg-second;
+    border-radius: 1.5em;
+    margin: 1em;
+    height: fit-content;
+    min-height: 38em;
+    .header{
+        
+        color: $color-text-primary;
+        padding:0 1em;
+        .container-header{
+            padding: 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 0.1em #5d616a;
+            .label{
+                font-size: 1.2em;
+            }
+            .container-action{
+                cursor: pointer;
+                display: flex;
+                .icon{
+                    width: 1em;
+                }
+                .action{
+                    color: #5d616a;
+                    font-size: .9em;
+                    border-bottom: solid 0.1em #5d616a;
+                }
+            }
+        }
+    }
+
+    .scroll{
+        overflow-y: scroll;
+        height: auto;
+        max-height: 70vh;
+        padding: 1em;
+
+        &::-webkit-scrollbar {
+            width: 8px;     /* Tamaño del scroll en vertical */
+            height: 8px;    /* Tamaño del scroll en horizontal */
+            // display: none;  /* Ocultar scroll */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #4b515b;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #4b515b;
+            // box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background-color: #4b515b;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #282d3c;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+            background: #282d3c;
+        }
+
+       
+    }
+
+  
+    
+}
+
+@media screen and (min-width: $middle)
+{
+
+    .container-content{
+        order: 1;
+    }
+}

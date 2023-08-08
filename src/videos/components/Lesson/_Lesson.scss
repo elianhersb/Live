@@ -1,0 +1,37 @@
+.lesson{
+    cursor: pointer;
+    border-radius:  1em;
+    display: flex;
+    align-items: center;
+    background-color: #303c4e;
+    margin-bottom: 1.5em;
+    min-height: 3em;
+    padding: 1em;
+    text-decoration: none;
+
+    .container-status, .container-mute{
+
+        .icon{
+            width: 1.5em;
+        }
+    }
+    .conatiner-info{
+        width: -webkit-fill-available;
+        margin: 0 2em;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        .label{
+            font-size: .8em;
+            padding: .3em 0;
+            color: $color-text-primary;
+            text-transform: uppercase;
+        }
+
+        
+    }
+    &.active{
+        border: solid $bg-green;
+    }
+}

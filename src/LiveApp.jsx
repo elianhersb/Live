@@ -1,19 +1,24 @@
-import { Certification, Linkbar, Navbar, Sidebar, Video } from "./general";
+import { Certification, Navbar, Player, Sidebar } from "./general";
 import { AppRouter } from "./router/AppRouter";
 
 export const LiveApp = () => {
   return (
     <div className="grid">
-      <div>
-        <Navbar />
-        <Video />
-        <Linkbar />
+      <Navbar />
+      <div className="container-player">
+        <Player />
       </div>
-      <div className="col-content">
+ 
+      <div className="container-router">
         <AppRouter />
         <Certification />
       </div>
-      <Sidebar />
+      <div className="container-link">
+        <Sidebar />
+      </div>
+        
+     
+      
     </div>
   )
 }

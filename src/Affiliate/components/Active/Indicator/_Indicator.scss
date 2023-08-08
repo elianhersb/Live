@@ -1,0 +1,26 @@
+.container-indicator{
+    
+    border-radius:  1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303c4e;
+    margin-bottom: 1.5em;
+    padding: .5em;
+    .label{
+        color: $color-text-primary;
+        text-transform: uppercase;
+        padding: 0 1em;
+        font-size: .8em;
+    }
+
+    .value{
+        color: $color-text-primary;
+        font-size:  2em;
+        padding: 0 .5em;
+    }
+
+    &.active{
+        border: solid .2em $bg-green;
+    }
+}

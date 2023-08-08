@@ -1,0 +1,45 @@
+.credit-card{
+    padding:0 1em;
+    display: flex;
+    .icon{
+        width: 1em;
+    }
+
+    .container-card{
+        margin: .5em;
+        padding: .5em;
+        border-radius: .5em;
+        background-color: #222530;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        width: 100%;
+        .info{
+            color: $color-text-primary;
+            display: flex;
+            align-items: center;
+            .icon{
+                width: 1.5em;
+                margin-right: .5em;
+            }
+            .number{
+                font-size: .8em;
+                color: $color-text-primary;
+            }
+            .separator{
+                color: $color-text-primary;
+                font-weight: 600;
+                margin: 0 .5em;
+            }
+            .date{
+                font-size: .8em;
+                color: $color-text-primary;
+            }
+        }
+
+        .icon{
+            width: 1em;
+            cursor: pointer;
+        }
+    }
+}

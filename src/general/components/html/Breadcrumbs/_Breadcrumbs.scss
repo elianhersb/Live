@@ -1,0 +1,32 @@
+.breadcrumbs{
+    font-size: small;
+    display: flex;
+    padding: 1em;
+    padding-bottom: 0;
+    .item{
+        display: flex;
+        align-items: baseline;
+        &:link, 
+        &:visited, 
+        &:active {
+            text-decoration:none;
+        }
+
+
+        .name {
+            color: #5d616a;
+            
+            &.active, &:hover{
+                color: $color-text-primary !important;
+            }
+
+
+ 
+        }
+
+        .icon{
+            padding: 0 .5em;
+            width: .5em;
+        }
+    }
+}

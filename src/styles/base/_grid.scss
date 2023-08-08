@@ -2,11 +2,19 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-
-    .col-content{
+    .container-player{
+        order: 1;
+    }
+    .container-router{
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        order: 3;
+    }
+
+    .container-link{
+        order: 2;
     }
 
 }
@@ -16,7 +24,18 @@
 {
 
     .grid{
-        grid-template-columns: 15fr 3fr 1fr;
+        grid-template-columns: 17fr 7fr auto;
+
+        .container-player{
+            order: 1;
+        }
+        .container-router{
+            order: 2;
+        }
+    
+        .container-link{
+            order: 3;
+        }
 
     }
 }

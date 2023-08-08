@@ -1,0 +1,22 @@
+.resume{
+    margin: 1em;
+    font-size: .8em;
+    border-radius: 1em;
+    overflow: hidden;
+    background: #222530;
+
+    .resume-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        .resume-title{
+            font-weight: 600;
+            color: $color-text-primary;
+        }
+        .icon{
+            cursor: pointer;
+            width: 1em;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+.container-btn{
+    padding: 1em;
+    .btn{
+        cursor: pointer;
+        padding: 1em;
+        width: 100%;
+        border-radius: 1em;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: bold;
+    
+        &.btn-primary{
+            color: $color-text-primary;
+            border: solid $bg-green 0.01em;
+            background: linear-gradient(180deg, #27430b, #385c12);
+        }
+    }
+}

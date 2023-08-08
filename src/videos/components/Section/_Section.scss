@@ -1,0 +1,61 @@
+.section{
+    font-size: .8em;
+    border: solid .1em #495f81;
+    border-radius: 1em;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+    .section-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #222530;
+        padding: 1em;
+        .section-title{
+            color: $color-text-grey;
+            text-transform: uppercase;
+        }
+
+        .icon{
+            cursor: pointer;
+            width: 1em;
+        }
+    }
+    .section-categories{
+        overflow-y: scroll;
+        max-height: 27em;
+        &::-webkit-scrollbar {
+            width: 6px; 
+            height: 6px;     
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #4b515b;
+            border-radius: 2px;
+        }
+
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #4b515b;
+            // box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background-color: #4b515b;
+        }
+
+        &::-webkit-scrollbar-track {
+            // background: #282d3c00;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+            background: #282d3c;
+        }
+
+    }
+
+
+}

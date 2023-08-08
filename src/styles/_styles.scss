@@ -3,14 +3,27 @@
 @import './base/grid';
 
 // Module - General 
-@import './general/general';
+@import '../general/general';
 
 // Module - Resources 
-@import './resources/resources';
+@import '../resources/components/ListCards/Card/Card';
+
+// Module - Shop 
+@import '../shop/components/ListProducts/Product/Product';
+
+// Module - Videos 
+@import '../videos/videos';
+
+// Module - Afilliate
+@import '../Affiliate/afiliate';
+
+// Module - Profile
+@import '../profile/profile';
 
 
 body{
     background-color: $bg-body;
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
